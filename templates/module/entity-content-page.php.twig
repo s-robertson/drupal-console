@@ -23,8 +23,8 @@ use Drupal\Core\Render\Element;
  *   - attributes: HTML attributes for the containing element.
  */
 function template_preprocess_{{ entity_name | machine_name }}(array &$variables) {
-  // Fetch {{ entity_class }} Entity Object.
-  ${{ entity_name | machine_name }} = $variables['elements']['#{{ entity_name }}'];
+  /* Fetch {{ entity_class }} Entity Object.
+  ${{ entity_name | machine_name }} = $variables['elements']['#{{ entity_name }}']; */
 
   // Helpful $content variable for templates.
   foreach (Element::children($variables['elements']) as $key) {
